@@ -1,0 +1,186 @@
+/* Loading screen styles */
+#loading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-video {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Hide content initially */
+#content {
+    display: none;
+}
+header {
+    background-color: #ff6600; /* Orange background for the header */
+    color: #ffffff; /* White text color for contrast */
+    padding: 10px 20px; /* Padding around the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+header .logo img {
+    height: 100px; /* Adjust the height of the logo as needed */
+    margin-right: 30px; /* Space between the logo and restaurant name */
+}
+
+header .logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+header nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Arrange menu items in a row */
+}
+
+header nav ul li {
+    margin: 0 10px; /* Space between menu items */
+}
+
+header nav ul li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1em; /* Adjust font size as needed */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Specials section styles */
+header .logo {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+header .logo img {
+    height: 100px; /* Adjust the height of the logo as needed */
+    margin-right: 30px; /* Space between the logo and restaurant name */
+}
+
+header .logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+.specials {
+    padding: 20px;
+    background-color: #ffffff; /* White background for the specials section */
+    color: #302e2e; /* Dark text color for readability */
+}
+
+.specials h2 {
+    text-align: center;
+    color: #ff6600; /* Orange color for the main header */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.specials-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders collapse into a single border */
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+    background-color: #ffffff; /* White background for the table */
+    color: #302e2e; /* Dark text color for table */
+}
+
+.specials-table thead {
+    background-color: #f5f5f5; /* Light background for table headers */
+    color: #302e2e; /* Dark text color for table headers */
+}
+
+.specials-table th, .specials-table td {
+    padding: 10px; /* Padding for readability */
+    text-align: left;
+    border-bottom: 1px solid #dddddd; /* Light border for table rows */
+}
+
+.specials-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly lighter background for even rows */
+}
+
+.specials-table tbody tr:hover {
+    background-color: #eaeaea; /* Highlight row on hover */
+}
+
+.specials-table .special-name {
+    font-weight: bold;
+    text-transform: uppercase; /* Special names in bold and uppercase */
+    color: #ff6600; /* Orange text for the dish names */
+}
+
+/* Add this to ensure the body takes the full height of the viewport */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the main content takes up the remaining space between the header and footer */
+main {
+    flex: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333333; /* Dark background for footer */
+    color: #ffffff; /* Light text color for footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ff6600; /* Orange color for links in the footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+
+/* Responsive table design */
+@media (max-width: 768px) {
+    .specials-table {
+        font-size: 0.9em; /* Adjust font size on smaller screens */
+    }
+
+    header .logo img {
+        height: 80px; /* Adjust logo size for smaller screens */
+    }
+
+    header nav ul li {
+        margin: 0 5px; /* Reduce spacing between menu items */
+    }
+
+    header nav ul li a {
+        font-size: 0.9em; /* Adjust font size for links on smaller screens */
+    }
+}
